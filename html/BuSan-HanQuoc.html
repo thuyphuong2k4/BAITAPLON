@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du lịch BuSan Hàn quốc</title>
+    <link rel="stylesheet" href="../css/Busan.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/contact-box.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<body>
+    <!-- Thanh điều hướng-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <img src="../img/logo.jpeg" alt="" width="40">
+            <a class="navbar-brand" href="../html/trang-chu.html">Traveling</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/trang-chu.html"><i class="fas fa-users"></i> Trang chủ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="internationalTour" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-globe"></i> Tour
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="internationalTour">
+                      <a class="dropdown-item" href="../html/tour-trong-nuoc.html">Tour trong nước</a>
+                      <a class="dropdown-item" href="../html/tour-nuoc-ngoai.html">Tour nước ngoài</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="internationalTour" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cogs"></i> Đăng ký tour
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="internationalTour">
+                        <a class="dropdown-item" href="../html/dang-ky-tour.html">Đăng ký tour</a>
+                        <a class="dropdown-item" href="../html/my-tour.html">My Tour</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Tin-tuc.html"><i class="fas fa-cogs"></i> Tin tức</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="internationalTour" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-globe"></i> Đăng nhập
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="internationalTour">
+                        <a class="dropdown-item" href="../html/dang-nhap.html">Đăng nhập</a>
+                        <a class="dropdown-item" href="../html/dang-ky.html">Đăng ký</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="lien-he.html"><i class="fas fa-phone"></i> Liên Hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sitemap.html"><i class="fas fa-globe"></i> Sitemap</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Hình ảnh-->
+    <div class="row">
+        <div class="col-md-3 bg-warning"></div>
+        <div class="col-md-8 bg-warning">
+        <img src="../img/busan.jpg" alt="">
+    </div>
+    <div class="col-md-1 bg-warning"></div>
+    </div>
+    
+        <!-- Thanh tìm kiếm -->
+    <div class="row bg-light py-3">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 ">
+            <div class="search-bar d-flex">
+            <!-- Tìm tour -->
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Tìm tour : ..." aria-label="Tìm tour">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-search " ></i></span>
+                        </div>
+                </div>
+          
+          <!-- Từ ngày -->
+                <div class="input-group">
+                    <input type="date" class="form-control" placeholder="Từ ngày">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-calendar-alt" height="50"></i></span>
+                    </div>
+                </div>
+          
+          <!-- Đến ngày -->
+                <div class="input-group">
+                    <input type="date" class="form-control" placeholder="Đến ngày">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                    </div>
+                </div>
+          
+          <!-- Chọn loại tour -->
+                <select class="form-control">
+                    <option>Trong nước</option>
+                    <option>Nước ngoài</option>
+                </select>
+          
+          <!-- Nút tìm kiếm -->
+                <button class="btn btn-search">Tìm Kiếm</button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <!-- Bài viết-->
+     <div class="row">
+        <div class="col-md-2 py-5"></div>
+        <div class="col-md-9 py-5">
+            <div class="row">
+                <!-- Left Column - Image Carousel -->
+                <div class="col-md-7">
+                    <div class="row">
+                        <!--Dịch chuyển ảnh-->
+                        <h4>(Mùa Lá Đỏ) Busan- DaeGu - Seoul - 6N5D - KS 3,4 Sao - Hãng Không Vietnam Airlines</h4>
+                        <p><span class="text-warning">★★★★☆</span> (1 đánh giá)</p>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/a1b.jpg" class="d-block w-100" alt="Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/busan.jpg" class="d-block w-100" alt="Image 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/a2bs.webp" class="d-block w-100" alt="Image 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/a3b.webp" class="d-block w-100" alt="Image 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/a5b.webp" class="d-block w-100" alt="Image 7">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/a6b.webp" class="d-block w-100" alt="Image 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/a7b.webp" class="d-block w-100" alt="Image 6">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!--Ảnh nhỏ-->
+                    <div class=" k row py-3 ">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2  ">
+                            <img src="../img/a1b.jpg" alt="IMG 1" height="70" width="120">
+                        </div>
+                        <div class="col-md-2 ">
+                            <img src="../img/a2bs.webp" alt="IMG 2" height="70" width="120">
+                        </div>
+                        <div class="col-md-2 ">
+                            <img src="../img/a3b.webp" alt="IMG 3" height="70" width="120">
+                        </div>
+                        <div class="col-md-2  ">
+                            <img src="../img/a5b.webp" alt="IMG 1" height="70" width="120">
+                        </div>
+                        <div class="col-md-2 ">
+                            <img src="../img/a7b.webp" alt="IMG 1" height="70" width="120">
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column - Tour Details -->
+            <div class="col-md-5 py-5 ">
+                <div class="price-box mb-3 py-3">
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-card-text"></i> <strong>Mã tour:</strong> SGHQT2024T10T11</li>
+                        <li><i class="bi bi-calendar"></i> <strong>Khởi hành:</strong> <input type="date" value="2024-11-16" class="form-control d-inline w-auto"></li>
+                        <li><i class="bi bi-clock"></i> <strong>Thời gian:</strong> 6 ngày</li>
+                        <li><i class="bi bi-geo-alt"></i> <strong>Nơi khởi hành:</strong> Hồ Chí Minh</li>
+                        <li><i class="bi bi-building"></i> <strong>Khách sạn:</strong> 4 sao</li>
+                        <li><i class="bi bi-airplane"></i> <strong>Phương tiện:</strong> Hàng không Vietnam Airlines</li>
+                        <li><i class="bi bi-people"></i> <strong>Số chỗ nhận:</strong> 6</li>
+                    </ul>
+                    <button class="btn btn-primary w-100">Download File chương trình</button>
+                </div>
+
+                <!-- Pricing Table -->
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Loại khách</th>
+                                <th>Số lượng</th>
+                                <th>Đơn giá</th>
+                                <th>Tổng giá</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Giá Người Lớn</td>
+                                <td><input type="number" value="1" class="form-control"></td>
+                                <td>18.990.000₫</td>
+                                <td>18.990.000₫</td>
+                            </tr>
+                            <tr>
+                                <td>Giá Trẻ Em</td>
+                                <td><input type="number" value="1" class="form-control"></td>
+                                <td>15.990.000₫</td>
+                                <td>15.990.000₫</td>
+                            </tr>
+                            <tr>
+                                <td>Giá Em Bé</td>
+                                <td><input type="number" value="0" class="form-control"></td>
+                                <td>5.990.000₫</td>
+                                <td>0₫</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="text-end">Tổng tiền:</td>
+                                <td class="total-price">33.990.000₫</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- Action Buttons -->
+                <div class="d-flex justify-content-between mt-3">
+                    <button class="btn btn-info">Giữ chỗ</button>
+                    <button class="btn btn-warning">Đặt tour</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Mục giới thiệu-->
+    <div class="row py-5 mt-4">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h1 class="text-danger">(Mùa Lá Đỏ) Busan- DaeGu - Seoul - 6N5D - KS 3,4 Sao - Hãng Không Vietnam Airlines</h1>
+            <p class="text-justify p-3">
+                Mùa đông “xứ kim chi” có gì đặc biệt? Du lịch Hàn Quốc đến thăm Busan – Seoul vào mùa đông,
+                 chắc chắn bạn sẽ bất ngờ bởi sự ấm áp của thành phố cảng lớn nhất Hàn Quốc với không khí lễ hội, 
+                 cảnh quan ngoạn mục của vùng ven biển, nhịp sống bình dị yên ả, nét văn hóa đậm đà bản sắc tại các điểm đến nổi tiếng 
+                 như làng văn hóa Gamcheon, tháp Busan, công viên Yongdusan...Không thể không nhắc đến bản tình ca mùa đông bất hủ tại đảo Nami, 
+                 cùng khung cảnh thiên nhiên và hàng cây ngày ấy đã khiến bao thế hệ thổn thức qua bộ phim truyền hình làm nên tên tuổi nơi đây. 
+                 Đừng quên chiêm ngưỡng thủ đô Seoul đầy huyền ảo và khác lạ khi mùa đông đến, với lớp tuyết trắng tinh khôi phủ lên công trình kiến trúc cổ, 
+                 thưởng thức phong vị tuyệt vời và các hoạt động đặc sắc chỉ có tại mùa đông Hàn Quốc.
+            </p>
+            <img src="../img/busan.jpg" alt="" height="400">
+            <h4 class="text-justify p-5">
+                ĐIỂM NHẤN NỔI BẬT</h4>
+                    <h5> Du lịch Hàn Quốc khám phá vẻ đẹp mê hoặc của bãi biển Haeundae</h5>
+                    <h5> Trải nghiệm tàu biển Haeundae Sky Capsule siêu đẹp và nổi tiếng ở Busan</h5>
+                    <h5>Check-in làng văn hóa nghệ thuật Gamcheon với muôn sắc màu rực rỡ </h5>
+                    <h5> Ghé thăm Haedong Yonggungsa – Ngôi chùa cổ bên bờ biển duy nhất tại Hàn Quốc</h5>
+                    <h5> Tháp Namsan – Biểu tượng của thủ đô Seoul với lối kiến trúc độc đáo</h5>
+                    <h5>Dạo quanh làng cổ Bukchon Hanok – Nét tĩnh lặng giữa lòng Seoul đầy sôi động. </h5>
+        </div>
+    <!-- Mục mô tả -->
+    <div class="row py-5 mt-4">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active text-success bg-danger text-center" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="true">Lịch trình </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success bg-warning text-center" id="viewed-tab" data-toggle="tab" href="#viewed" role="tab" aria-controls="viewed" aria-selected="false">Mô tả</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
+                    <h3>LỊCH TRÌNH</h3>
+                    <div class="timeline">
+                        <!-- Itinerary Items -->
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span>Đêm trước ngày khởi hành: TP.HCM -  BUSAN</span>
+                            </div>
+                        </div>
+                        <p class="text-tab text-justify">Quý khách tập trung tại sân bay Tân Sơn Nhất, Ga Quốc Tế, lầu 2. 
+                            </p>
+                        <p class="text-tab text-justify">
+                            Hướng dẫn viên Transviet Travel đón và hỗ trợ quý khách làm thủ tục đáp chuyến bay đi Busan – Hàn Quốc.
+                        </p>
+                        <p class="text-tab text-justify">
+                            Chuyến bay dự kiến:  VJ 868 SGN PUS 00:35 07:45
+                        </p>
+                        <p class="text-tab text-justify">Quý khách nghỉ đêm trên máy bay</p>
+                            
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span>Ngày 1: BUSAN  GAMCHEON VILLAGE  HAEUNDAE (Ăn sáng, trưa, tối)</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </div>
+                            <p class="text-tab text-justify">Hạ cánh tại sân bay Quốc tế Gimhae. Sau khi làm thủ tục nhập cảnh, xe và HDV đón đoàn đi tham quan thành phố Busan – Thành phố biển đáng sống nhất Hàn Quốc:</p>
+                            <p class="text-tab text-justify">Đoàn dùng bữa sáng nhẹ trên máy bay hoặc bữa sáng cầm tay.</p>
+                            <p class="text-tab text-justify">Gamcheon Culture Village: Hành trình đặc sắc đến làng nghệ thuật màu sắc, nơi quý khách chiêm ngưỡng những ngôi nhà nhỏ xinh và tác phẩm nghệ thuật đường phố hòa quyện tạo nên một không gian trải nghiệm tuyệt vời ở Busan.
+                            </p>
+                            <img src="../img/b1.jpg" alt="" height="400" class="text-tab">
+                            <p class="text-tab text-justify">
+                                Công viên Yongdusan Park – Viên ngọc xanh tươi giữa lòng Busan và được coi là biểu tượng tình yêu ở Busan. Tại đây quý khách sẽ đắm chìm trong sự thanh bình và vẻ đẹp của cảnh quan thiên nhiên với hệ sinh thái đa dạng cùng nhiều loài động thực vật phong phú.
+                            </p>
+                            <img src="../img/b2.jpg" alt="" height="400" class="text-tab">
+
+                            <p class="text-tab text-justify">
+                                Tháp Busan: Là biểu tượng văn hóa tại trái tim Busan, tại đây quý khách đi thang máy lên tháp để thu vào mắt trọn vẹn cảnh sắc thành phố và bờ biển rực rỡ. (Chưa bao gồm vé lên tháp)
+                            </p>
+                            <p class="text-tab text-justify">Jagalchi Fish Market – Khu chợ cá lớn nhất Hàn Quốc. Quý khách sẽ cảm nhận được cuộc sống sinh hoạt và buôn bán hằng ngày của người dân bản xứ nơi đây.</p>
+                            <img src="../img/b3.jpg" alt="" height="400" class="text-tab">
+                            <p class="text-tab text-justify">Quý khách dùng bữa trưa, tối tại nhà hàng địa phương.
+                                Nghỉ đêm tại khách sạn.</p>
+                            
+                            
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <span>Ngày 2: BUSAN - SEOUL (Ăn sáng, trưa, tối)</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </div>
+                        <p class="text-tab text-justify">Sau bữa sáng, quý khách làm thủ tục trả phòng. HDV đưa đoàn khởi hành tham quan:
+                        </p>
+                        <p class="text-tab text-justify">Trải nghiệm ngồi cabin tàu trên cao Haeundae Sky Capsule ngắm toàn cảnh đại dương bao la và bầu trời xanh ngắt của Haeundae. Những toa tàu nhỏ nhắn đa sắc chạy chậm rãi dọc đường ray trên cao, mở ra khung cảnh như những thước phim hoạt hình.
+                        </p>
+                        <img src="../img/b5.jpg" alt="" height="400" class="text-tab">
+                        <p class="text-tab text-justify">
+                            Ghé thăm Haedong Yonggungsa Temple – Ngôi chùa cổ 600 năm tuổi tọa lạc cạnh bờ biển, với địa thế rất đẹp, được bao quanh bởi hang động và 4 con sư tử (đại diện cho Niềm Vui, Nỗi Buồn, Sự Tức Giận và Hạnh Phúc).
+                            </p>
+                        
+                            <img src="../img/b6.jpg" alt="" height="400" class="text-tab">
+                            <p class="text-tab text-justify">Ăn tối tại nhà hàng địa phương.
+                                Nghỉ đêm tại khách sạn.</p>
+                
+                        <div class="timeline-item completed">
+                            <div class="timeline-content">
+                                <span>Ngày 3: SEOUL  HỒ CHÍ MINH (Ăn sáng)</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
+                        </div>
+                        <p class="text-tab text-justify">Đoàn dùng bữa sáng tại khách sạn, làm thủ tục trả phòng.</p>
+                        <p class="text-tab text-justify">Đến giờ, xe đưa đoàn ra sân bay, làm thủ tục đáp chuyến bay về TP Hồ Chí Minh.
+                        </p>
+                        <b class="text-tab text-justify">Chuyến bay dự kiến: VJ 863 ICN SGN 11:40 14:55
+                        </b>
+                        <p class="text-tab text-justify">Đến TP.HCM, kết thúc chương trình, chia tay và hẹn gặp lại quý khách.
+                        </p>
+                        <i class="text-tab text-justify">(Thứ tự chương trình có thể thay đổi theo tình hình thực tế của tour nhưng vẫn đảm bảo đầy đủ các điểm tham quan trong chương trình).
+                        </i>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="viewed" role="tabpanel" aria-labelledby="viewed-tab">
+                    <h2 class="text-success">TOUR BAO GỒM</h2>
+                    <p class="text-tab text-justify"> - Vé máy bay theo hành trình bao gồm 7kg xách tay và 20kg ký gửi. ( Trường hợp mua tour vé lẻ: theo điều kiện của hãng hàng không)</i>
+                    <p class="text-tab text-justify"> - Xe vận chuyển đưa đón tham quan theo chương trình</p>
+                    <p class="text-tab text-justify"> - Phí tham quan các điểm đã ghi trên chương trình</p>
+                    <p class="text-tab text-justify"> - Các bữa ăn theo chương trình                    </p>
+                    <p class="text-tab text-justify"> - Nghỉ đêm tại khách sạn tiêu chuẩn 3 sao: 2 người lớn/phòng, phòng 3 sẽ được bố trí khi cần thiết và thông báo trước cho khách hàng.                    </p>
+                    <p class="text-tab text-justify"> - Nước uống trên xe: 1 chai/ khách/ ngày tham quan.</p>
+                    <p class="text-tab text-justify"> - Quà tặng</p>
+                    <p class="text-tab text-justify"> - Bảo hiểm du lịch với giá trị hợp đồng tối đa là 735.000.000VNĐ/trường hợp. Khách từ 85 tuổi trở lên phụ thu gói bảo hiểm du lịch riêng biệt (mức phí tùy theo hành trình và độ tuổi của khách).</p>
+                    <p class="text-tab text-justify"> - Hướng dẫn viên từ Việt Nam theo suốt chương trình và Hướng dẫn viên đón đoàn từ Hàn Quốc.</p>
+                    <h2 class="text-danger">TOUR KHÔNG BAO GỒM</h2>
+                    <p class="text-tab text-justify"> - Hộ chiếu (bắt buộc còn thời hạn sử dụng trên 6 tháng - tính từ ngày nhập cảnh lại Việt Nam).</p>
+                    <p class="text-tab text-justify"> - Phí phụ thu phòng đơn.</p>
+                    <p class="text-tab text-justify"> - Hành lý quá cước quy định, xe vận chuyển ngoài chương trình.</p>
+                    <p class="text-tab text-justify"> - Phụ thu khách Quốc tịch nước ngoài 3.500.000 VNĐ/người</p>
+                    <p class="text-tab text-justify"> - Phụ thu khách Quốc tịch Hàn Quốc 6.500.000 VNĐ/người</p>
+                    <p class="text-tab text-justify"> - Chi phí làm visa tái nhập Việt Nam nếu quý khách mang hộ chiếu nước ngoài có thị thực nhập cảnh Việt Nam 1 lần.</p>
+                    <p class="text-tab text-justify"> - Tiền bồi dưỡng cho hướng dẫn viên và tài xế.</p>
+                    <p class="text-tab text-justify">- Các chi phí khác không đề cập trong mục bao gồm.</p>
+                    <p class="text-tab text-justify">- Người lớn: 2USD/khách cho đêm trước ngày khởi hành và 6USD/khách/ngày.</p>
+                    <p class="text-tab text-justify">- Trẻ em (từ 2 đến 11 tuổi): 100% phí người lớn</p>
+                    <p class="text-tab text-justify">- Em bé (dưới 2 tuổi): miễn phí</p>
+                    <h2 class="text-danger">LƯU Ý </h2>
+                    <p class="text-tab text-justify">Chương trình tour là du lịch trọn gói kết hợp tham quan mua sắm, khách hàng không tự ý tách đoàn dưới bất cứ hình thức nào, các dịch vụ không sử dụng sẽ không được hoàn lại. Mức phí charge bỏ điểm shopping cho từng điểm như sau: Sâm chính phủ - 3.200.000VNĐ; Tinh dầu thông đỏ: 2.200.000VNĐ; Mỹ phẩm: 1.700.000VNĐ; Cửa hàng miễn thuế, nông sản (cửa hàng sâm tươi): 1.200.000VNĐ/điểm. Tùy vào trường hợp cần thiết muốn tách đoàn khách phải báo trước với công ty ngay tại thời điểm đăng ký tour để được xem xét và chịu phí 4.500.000VNĐ theo quy định.</p>
+                    <p class="text-tab text-justify">Sau khi được cấp visa vì bất kỳ lý do gì quý khách không tham gia tour theo đoàn cùng Công ty, TransViet Travel có quyền báo hủy visa đã được cấp của quý khách với nhà chức trách và không hoàn trả bất kỳ chi phí nào.</p>
+                    <p class="text-tab text-justify">Trường hợp Quý khách bị từ chối visa, chi phí không hoàn lại là 2,000,000 VND
+                        Trường hợp Quý khách đã có visa, chi phí giảm trừ lại là 800,000 VND</p>
+                    <p class="text-tab text-justify">Trường hợp quý khách mua tour vé lẻ bị từ chối visa, phí visa không hoàn lại: 2.0000.000 VNĐ/người, vé máy bay theo điều kiện của hãng hàng không.</p>
+                    <p class="text-tab text-justify">Các chương trình tour được khai thác chặng bay quốc tế trên các hãng hàng không sau sẽ không có bữa ăn trên máy bay: Vietjet Air (VJ), Vanilla Air (JW), AirAsia (AK), Jetstar Asia Airways (3K), Pacific Airlines (BL), Thai AirAsia (FD), Tiger Air (TR), T'way Airlines (TW)...</p>
+                    <p class="text-tab text-justify">Các chặng bay nội địa của các hãng hàng không trên nước sở tại không bao gồm suất ăn trên máy bay.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="row py-5">
+                <div class="col-md-2"></div>
+                <!--Xem tin tức mới nhất-->
+                <div class="col-md-8">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="new-tab" data-toggle="tab" href="#new" role="tab" aria-controls="new" aria-selected="true">Tin Mới</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="viewed-tab" data-toggle="tab" href="#viewed" role="tab" aria-controls="viewed" aria-selected="false">Đã Xem</a>
+                        </li>
+                    </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
+                        <div class="article-item">
+                            <img src="../img/nhatrang.jpg" alt="Thác Niagara" height="150">
+                            <div>
+                                <a href="#" class="card-link">
+                                    <h6>
+                                    Trốn phố thị, tìm bình yên với 6 làng chài Nha Trang phải ghé qua
+                                    </h6>
+                                </a>
+                                <p class="date"><i class="fa fa-calendar"></i>  09/12/2024</p>
+                            </div>
+                        </div>
+                        <div class="article-item">
+                            <img src="../img/busan.jpg" alt="Charging Bull">
+                            <div>
+                                <a href="#" class="card-link">
+                                <h6>
+                                Kinh nghiệm du lịch Busan tự túc 2024  
+                                </h6>                         
+                                </a>
+                                <p class="date"><i class="fa fa-calendar"></i> 30/05/2024</p>
+                            </div>
+                        </div>
+                        <div class="article-item">
+                            <img src="../img/a5tmh.jpg" alt="Grand Canyon">
+                                <div>
+                                <a href="../html/Du-lich-hoang-su-phi-5-dia-diem-hap-dan.html" class="card-link">
+                                <h6>Du lịch Hoàng Su Phì (Hà Giang): 5 địa điểm du lịch hấp dẫn nhất</h6>
+                                </a>
+                                <p class="date"><i class="fa fa-calendar"></i> 10/05/2024</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="viewed" role="tabpanel" aria-labelledby="viewed-tab">
+                        <!-- Nội dung cho tab Đã Xem -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contact- box-->
+    <div class="row py-3">
+        <div class="col-md-2"></div>
+        <div class="contact-box col-md-8">
+            <h6><i class="fas fa-phone-alt"></i> ĐỂ LẠI SỐ ĐIỆN THOẠI CHÚNG TÔI SẼ GỌI LẠI TƯ VẤN</h6>
+            <div class="input-group mt-3 mb-3">
+                <input type="text" class="form-control" placeholder="Số điện thoại" aria-label="Số điện thoại">
+                <div class="input-group-append">
+                    <button class="btn btn-send" type="button"><i class="fas fa-paper-plane"></i> Gửi Đi</button>
+                </div>
+            </div>
+            <h6><i class="fas fa-phone-alt"></i> LIÊN HỆ CÔNG TY:</h6>
+            <p class="contact-info">Tổng đài: 1900 0812 hoặc (098) 204 0128</p>
+        </div>
+    </div>
+
+    <!--Tour liên quan-->
+    <div class="row py-3">
+        
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h1 class="bg-info text-center">TOUR LIÊN QUAN</h1>
+            <br>
+            <div class="row">
+                <!--Tour 1-->
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <a href="#" class="card-link">
+                        <img src="../img/vinhhalong.jpg" alt="Tour Image">
+                        <div class="tour-card-body">
+                            <h5 class="tour-card-title">VỊNH HẠ LONG - VIỆT NAM</h5>
+                        </a>
+                            <p><i class="fa fa-calendar-alt" > 14/11/2024 </i>  </p>
+                            <p><i class="fa fa-calendar-alt"> Ngày khác</i></p>
+                            <span><input type="date"> </span>
+                           
+                        </div>
+                        <div class="tour-card-footer">
+                            <span class="price">15.990.000đ</span>
+                            <button class="btn btn-book">Đặt Ngay</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Tour 2-->
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <a href="#" class="card-link">
+                        <img src="../img/ngami.jpg" alt="Tour Image">
+                        <div class="tour-card-body">
+                            <h5 class="tour-card-title">NGA MI - TRUNG QUỐC </h5>
+                        </a>
+                            <p><i class="fa fa-calendar-alt" > 15/12/2024 </i>  </p>
+                            <p><i class="fa fa-calendar-alt"> Ngày khác</i></p>
+                            <span><input type="date"> </span>
+                           
+                        </div>
+                        <div class="tour-card-footer">
+                            <span class="price">65.990.000đ</span>
+                            <button class="btn btn-book">Đặt Ngay</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Tour 3-->
+                <div class="col-md-4">
+                    <div class="tour-card">
+                        <a href="#" class="card-link">
+                        <img src="../img/Hallstatt.jpg" alt="Tour Image">
+                        <div class="tour-card-body">
+                            <h5 class="tour-card-title"> THỊ TRẤN HALLSTATT </h5>
+                        </a>
+                            <p><i class="fa fa-calendar-alt" > 15/01/2025</i>  </p>
+                            <p><i class="fa fa-calendar-alt"> Ngày khác</i></p>
+                            <span><input type="date"> </span>
+                           
+                        </div>
+                        <div class="tour-card-footer">
+                            <span class="price">49.990.000đ</span>
+                            <button class="btn btn-book">Đặt Ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="footer-top bg-dark text-white py-5 ">
+        <div class="row">
+            <div class="col-md-2"></div>
+             <!-- Dịch Vụ Column -->
+        <div class="col-md-2 text-white">
+            <div class="footer-section">DỊCH VỤ</div>
+            <a href="../html/tour-trong-nuoc.html" class="footer-link text-white">Tour Trong Nước</a>
+            <a href="../html/tour-nuoc-ngoai.html" class="footer-link text-white">Tour Nước Ngoài</a>
+        </div>
+        <!-- Hướng Dẫn Column -->
+        <div class="col-md-2">
+            <div class="footer-section">HƯỚNG DẪN</div>
+            <a href="#" class="footer-link text-white">Giới Thiệu</a>
+            <a href="#" class="footer-link text-white">Quy định chung</a>
+            <a href="#" class="footer-link text-white">Hướng dẫn thanh toán</a>
+            <a href="#" class="footer-link text-white">Hướng dẫn đặt tour</a>
+        </div>
+        <!-- Thông Tin Column -->
+        <div class="col-md-2">
+            <div class="footer-section">THÔNG TIN</div>
+            <a href="../html/Tin-tuc.html" class="footer-link text-white">Tin tức</a>
+            <a href="#" class="footer-link text-white">Dịch vụ</a>
+            <a href="#" class="footer-link text-white">Thư viện</a>
+            <a href="lien-he.html" class="footer-link text-white">Liên hệ</a>
+        </div>
+        <!-- Tin Tức Mới Nhất Column -->
+        <div class="col-md-3">
+            <div class="footer-section">TIN TỨC MỚI NHẤT</div>
+            <a href="#" class="footer-link text-white"> Kinh nghiệm du lịch Busan tự túc 2024</a>
+            <a href="#" class="footer-link text-white">Trốn phố thị, tìm bình yên với 6 làng chài Nha Trang phải ghé qua</a>
+            <a href="../html/Du-lich-hoang-su-phi-5-dia-diem-hap-dan.html" class="footer-link text-white">Du lịch Hoàng Su Phì (Hà Giang): 5 địa điểm du lịch hấp dẫn nhất</a>
+        </div>
+    </div>
+</body>
+</html>

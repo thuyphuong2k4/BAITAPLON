@@ -1,0 +1,135 @@
+.text-link{
+    text-decoration: none;
+    list-style-type: none;
+}
+.tab-content {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-color: #dee2e6 #dee2e6 #fff;
+    font-weight: bold;
+}
+.article-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.article-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.article-item .date {
+    font-size: 0.9rem;
+    color: #888;
+}
+.tour-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.tour-card img {
+    width: 100%;
+    height: auto;
+}
+.tour-card-body {
+    padding: 15px;
+}
+.tour-card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1b4f8a;
+    margin-bottom: 10px;
+}
+.tour-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+}
+.tour-card-footer .price {
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.tour-card-footer .btn-book {
+    background-color: #ffc107;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.card-link{
+    text-decoration: none;
+    color: darkblue;
+}
+.card-img-top {
+    height: 200px; /* Điều chỉnh chiều cao hình ảnh nếu cần */
+    object-fit: cover;
+}
+.price-box {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 5px;
+}
+.total-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #d9534f;
+}
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 3px solid #007bff;
+}
+.timeline-item {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border: 3px solid #007bff;
+    border-radius: 50%;
+}
+.timeline-item.completed:before {
+    background-color: #d9534f;
+}
+.timeline-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.timeline-content:hover {
+    background-color: #f8f9fa;
+}
+.text-tab{
+    font-size: 16;
+    margin-left: 50px;
+}
+.timeline-content{
+    color: rgb(14, 122, 16);
+    font-size: 20px;
+    font-weight: bolder;
+}

@@ -1,0 +1,28 @@
+.search-bar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  .search-bar .input-group,
+  .search-bar .form-control,
+  .search-bar .btn-search,
+  .search-bar select {
+    height: 45px; /* Chiều cao cố định */
+    min-width: 150px; /* Đặt độ rộng tối thiểu để các ô đều nhau */
+  }
+  .search-bar .input-group-append .input-group-text,
+    .search-bar .input-group-prepend .input-group-text {
+      height: 100%;
+    }
+    .search-bar .btn-search {
+      background-color: #ff8c00;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      min-width: 100px;
+    }
+    .search-bar .btn-search:hover {
+      background-color: #ff7200;
+    }

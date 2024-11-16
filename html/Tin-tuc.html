@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour nước ngoài</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Thanh điều hướng-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <img src="../img/logo.jpeg" alt="" width="40">
+            <a class="navbar-brand" href="../html/trang-chu.html">Traveling</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/trang-chu.html"><i class="fas fa-users"></i> Trang chủ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="internationalTour" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-globe"></i> Tour
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="internationalTour">
+                      <a class="dropdown-item" href="../html/tour-trong-nuoc.html">Tour trong nước</a>
+                      <a class="dropdown-item" href="../html/tour-nuoc-ngoai.html">Tour nước ngoài</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="internationalTour" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cogs"></i> Đăng ký tour
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="internationalTour">
+                        <a class="dropdown-item" href="../html/dang-ky-tour.html">Đăng ký tour</a>
+                        <a class="dropdown-item" href="../html/my-tour.html">My Tour</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Tin-tuc.html"><i class="fas fa-cogs"></i> Tin tức</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="internationalTour" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-globe"></i> Đăng nhập
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="internationalTour">
+                        <a class="dropdown-item" href="../html/dang-nhap.html">Đăng nhập</a>
+                        <a class="dropdown-item" href="../html/dang-ky.html">Đăng ký</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="lien-he.html"><i class="fas fa-phone"></i> Liên Hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sitemap.html"><i class="fas fa-globe"></i> Sitemap</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Hình ảnh-->
+    <div class="row">
+        <img src="../img/tintuc.png" alt="">
+    </div>
+    <!-- Tìm kiếm -->
+    <div class="row bg-light py-3">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 ">
+            <div class="search-bar d-flex">
+            <!-- Tìm tour -->
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Tìm tour : ..." aria-label="Tìm tour">
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-search " ></i></span>
+                        </div>
+                </div>
+          
+          <!-- Từ ngày -->
+                <div class="input-group">
+                    <input type="date" class="form-control" placeholder="Từ ngày">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-calendar-alt" height="50"></i></span>
+                    </div>
+                </div>
+          
+          <!-- Đến ngày -->
+                <div class="input-group">
+                    <input type="date" class="form-control" placeholder="Đến ngày">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                    </div>
+                </div>
+          
+          <!-- Chọn loại tour -->
+                <select class="form-control">
+                    <option>Trong nước</option>
+                    <option>Nước ngoài</option>
+                </select>
+          
+          <!-- Nút tìm kiếm -->
+                <button class="btn btn-search">Tìm Kiếm</button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <!---->
+    <div class="row py-5">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+            <div class="card">
+                    <div class="card-header">
+                        Tìm Kiếm Tour
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="keyword" class="form-label">Nhập tên, vị trí, địa danh...</label>
+                                <input type="text" class="form-control" id="keyword" placeholder="Nhập từ khóa tìm kiếm">
+                            </div>
+                            <div class="mb-3">
+                                <label for="type" class="form-label">Loại tour</label>
+                                <select class="form-select" id="type">
+                                    <option value="">Tất cả</option>
+                                    <option value="beach">Biển</option>
+                                    <option value="mountain">Núi</option>
+                                    <option value="culture">Văn hóa</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="departure" class="form-label">Nơi khởi hành</label>
+                                <select class="form-select" id="departure">
+                                    <option value="">Tất cả</option>
+                                    <option value="hanoi">Hà Nội</option>
+                                    <option value="hochiminh">Hồ Chí Minh</option>
+                                    </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="destination" class="form-label">Nơi đến</label>
+                                <select class="form-select" id="destination">
+                                    <option value="">Tất cả</option>
+                                    <option value="danang">Đà Nẵng</option>
+                                    <option value="phuquoc">Phú Quốc</option>
+                                    </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="duration" class="form-label">Độ dài tour</label>
+                                <select class="form-select" id="duration">
+                                    <option value="">Tất cả</option>
+                                    <option value="3days">3 ngày 2 đêm</option>
+                                    <option value="5days">5 ngày 4 đêm</option>
+                                    </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="departure_date" class="form-label">Ngày đi</label>
+                                <input type="date" class="form-control" id="departure_date">
+                            </div>
+                            <button type="submit" class="btn btn-primary text-center">Tìm kiếm</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+        <!-- Tour trong nước-->
+        <div class="col-md-8">
+            <!--Bài 1-->
+            <div class="row">
+                <div class="col-md-9 mb-4">
+                    <div class="card h-100">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="../img/hoangphuxin.jpg" class="card-img-top" alt="Tour Thái Lan" height="200">
+                                <h5 class="card-title py-1">Du lịch Hoàng Su Phì (Hà Giang): 5 địa điểm du lịch hấp dẫn nhất</h5>
+                            </div>
+                            <div class="card-body col-md-5 text-justify">
+                                <a href="../html/Du-lich-hoang-su-phi-5-dia-diem-hap-dan.html" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Xem chi tiết</a>
+                                <p class="card-text py-1">
+                                    Có dịp dừng chân tại đây, thì đừng bỏ lỡ Hoàng Su Phì, cái tên quá quen thuộc đối với nhiều khách du lịch 
+                                    đã ghé thăm Hà Giang. Cùng Bách hóa XANH khám phá 5 địa điểm du lịch hấp dẫn nhất tại Hoàng Su Phì nhé!
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Bài 2-->
+            <div class="row">
+                <div class="col-md-9 mb-4">
+                    <div class="card h-100">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="../img/thailan.png" class="card-img-top" alt="Tour Thái Lan" height="200">
+                                <h5 class="card-title py-1">Du lịch Thái Lan đừng ngại thử 6 món ăn kỳ lạ có thể bạn chưa biết</h5>
+                            </div>
+                            <div class="card-body col-md-5 text-justify">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Xem chi tiết</a>
+                                <p class="card-text py-1">
+                                Ẩm thực Thái Lan có rất nhiều món ăn kì lạ mà đến người dân nước họ và các chuyên gia ẩm thực cũng cảm thấy
+                                 mùi vị đặc biệt của chúng. Trong chuyến đi tour Thái Lan, bạn đã từng thử 6 món ăn kỳ lạ nhất sau đây chưa?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Bài 2-->
+            <div class="row">
+                <div class="col-md-9 mb-4">
+                    <div class="card h-100">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="../img/eiffel.jpg" class="card-img-top" alt="Tour Thái Lan" height="200">
+                                <h5 class="card-title py-1">16 sai lầm mà nhiều người đi du lịch châu Âu lần đầu tiên thường mắc phải</h5>
+                            </div>
+                            <div class="card-body col-md-5 text-justify">
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Xem chi tiết</a>
+                                <p class="card-text py-1">
+                                    Một lần đến khám phá châu Âu là ước mong của rất nhiều người. Tuy nhiên, trước khi xách ba lô lên và đi, 
+                                    bạn hãy chú ý để tránh được 16 sai lầm mà những người đi du lịch châu Âu lần đầu tiên thường mắc phải theo lời khuyên của 
+                                    các tín đồ du lịch chuyên nghiệp nhé.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="footer-top bg-dark text-white py-5 ">
+            <div class="row">
+                <div class="col-md-2"></div>
+                 <!-- Dịch Vụ Column -->
+            <div class="col-md-2 text-white">
+                <div class="footer-section">DỊCH VỤ</div>
+                <a href="#" class="footer-link text-white">Tour Trong Nước</a>
+                <a href="#" class="footer-link text-white">Tour Nước Ngoài</a>
+            </div>
+            <!-- Hướng Dẫn Column -->
+            <div class="col-md-2">
+                <div class="footer-section">HƯỚNG DẪN</div>
+                <a href="#" class="footer-link text-white">Giới Thiệu</a>
+                <a href="#" class="footer-link text-white">Quy định chung</a>
+                <a href="#" class="footer-link text-white">Hướng dẫn thanh toán</a>
+                <a href="#" class="footer-link text-white">Hướng dẫn đặt tour</a>
+            </div>
+            <!-- Thông Tin Column -->
+            <div class="col-md-2">
+                <div class="footer-section">THÔNG TIN</div>
+                <a href="#" class="footer-link text-white">Tin tức</a>
+                <a href="#" class="footer-link text-white">Dịch vụ</a>
+                <a href="#" class="footer-link text-white">Thư viện</a>
+                <a href="lien-he.html" class="footer-link text-white">Liên hệ</a>
+            </div>
+            <!-- Tin Tức Mới Nhất Column -->
+            <div class="col-md-3">
+                <div class="footer-section">TIN TỨC MỚI NHẤT</div>
+                <a href="#" class="footer-link text-white"> Kinh nghiệm du lịch Busan tự túc 2024</a>
+                <a href="#" class="footer-link text-white">Trốn phố thị, tìm bình yên với 6 làng chài Nha Trang phải ghé qua</a>
+                <a href="Du-lich-hoang-su-phi-5-dia-diem-hap-dan.html" class="footer-link text-white">Du lịch Hoàng Su Phì (Hà Giang): 5 địa điểm du lịch hấp dẫn nhất</a>
+            </div>
+        </div>
+    </div>
+
+    </body>
+    </html>
+            

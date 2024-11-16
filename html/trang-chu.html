@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVELING </title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      
+
+</head>
+<body>
+    
+    <!-- Thanh điều hướng -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <img src="../img/logo.jpeg" alt="" width="40">
+            <a class="navbar-brand" href="../html/trang-chu.html">Traveling</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/trang-chu.html"><i class="fas fa-users"></i> Trang chủ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="internationalTour" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-globe"></i> Tour
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="internationalTour">
+                      <a class="dropdown-item" href="../html/tour-trong-nuoc.html">Tour trong nước</a>
+                      <a class="dropdown-item" href="../html/tour-nuoc-ngoai.html">Tour nước ngoài</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="internationalTour" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cogs"></i> Đăng ký tour
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="internationalTour">
+                        <a class="dropdown-item" href="../html/dang-ky-tour.html">Đăng ký tour</a>
+                        <a class="dropdown-item" href="../html/my-tour.html">My Tour</a>
+                    </div>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/Tin-tuc.html"><i class="fas fa-cogs"></i> Tin tức</a>
+            </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="internationalTour" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-globe"></i> Đăng nhập
+                </a>
+                <div class="dropdown-menu" aria-labelledby="internationalTour">
+                  <a class="dropdown-item" href="../html/dang-nhap.html">Đăng nhập</a>
+                  <a class="dropdown-item" href="../html/dang-ky.html">Đăng ký</a>
+                </div>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="lien-he.html"><i class="fas fa-phone"></i> Liên Hệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sitemap.html"><i class="fas fa-globe"></i> Sitemap</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+            
+<!-- Carousel -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"> <!-- Thêm thuộc tính data-bs-interval -->
+    <div class="carousel-inner">
+    
+       <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <img src="../img/anhtq.jpg" class="img-fluid mx-auto d-block" alt="Slide 1"  width="100%">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>CHƯƠNG TRÌNH ƯU ĐÃI</h5>
+                <h1>TRUNG QUỐC</h1>
+                <p>Khởi hành 14/12/2024</p>
+                <a href="#" class="btn btn-warning text-white">Xem thêm</a>
+            </div>
+        </div>  
+
+      
+        
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <img src="../img/anhtl.jpg" class="img-fluid mx-auto d-block" alt="Slide 2" width="100%" > <!-- Link ảnh 2 -->
+            <div class="carousel-caption d-none d-md-block">
+                <h5>KHÁM PHÁ DU LỊCH</h5>
+                <h1>THÁI LAN - BANGKOK</h1>
+                <p>Khởi hành 20/12/2024</p>
+                <a href="#" class="btn btn-warning text-white">Xem thêm</a>
+            </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+            <img src="../img/anhhq.jpg" class="img-fluid mx-auto d-block" alt="Slide 3" width="100%"> <!-- Link ảnh 3 -->
+            <div class="carousel-caption d-none d-md-block">
+                <h5>TRẢI NGHIỆM MỚI LẠ</h5>
+                <h1> HÀN QUỐC</h1>
+                <p>Khởi hành 25/12/2024</p>
+                <a href="#" class="btn btn-warning text-white">Xem thêm</a>
+            </div>
+        </div>
+    </div>
+    <!-- Điều khiển carousel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- Thanh tìm kiếm -->
+<div class="container search-bar col-9">
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Tìm kiếm...">
+        <button class="btn btn-info" type="button"> 
+            <img class="bi bi-search" src="../img/kinhlup.jpg" height="40"></img>
+        </button>
+    </div>
+</div>
+<!-- Tour đang hot-->
+    <div class="row py-5 ">
+        <h2 class=" content-tour1 text-center mb-4"> TOUR ĐANG HOT</h2>
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Tour 1 -->
+                    <div class="col">
+                        <div class="card h-70 w-150">
+                            <a href="#" class="card-link">
+                            <img src="../img/vinhhalong.jpg" class="card-img-top" alt="Du Lịch Vịnh Hạ Long">
+                            <div class="card-body">
+                                <span class="badge bg-danger">HOT</span>
+                                <h5 class="card-title mt-2"> VỊNH HẠ LONG - VIỆT NAM </h5>
+                            </a>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>
+                                        <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh</p>
+                                    </span>
+                                    <span>
+                                        <p class="card-text"><i class="fa fa-calendar-alt"></i> 20/03/2025</p>
+                                    </span>
+                                </div>
+                                <p class="card-text-gia text-danger" >15.990.000 VNĐ</p>
+                                <a href="#" class=" card-text-link"> Xem thêm >> </a>
+                            </div>
+                            <div class="card-footer">
+                                <a href="../html/dang-ky-tour.html" class="btn btn-warning w-100">ĐẶT NGAY</a>  
+                            </div>
+                        </div>
+                    </div>
+                <!-- Tour 2 -->
+                <div class="col">
+                    <div class="card h-70 w-150">
+                        <a href="../html/BuSan-HanQuoc.html" class="card-link">
+                        <img src="../img/busan.jpg" class="card-img-top" alt="Du Lịch tq">
+                        <div class="card-body">
+                            <span class="badge bg-danger">HOT</span>
+                            <h5 class="card-title mt-2"> BUSAN - HÀN QUỐC</h5>
+                        </a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh</p>
+                                </span>
+                                <span>
+                                    <p class="card-text"><i class="fa fa-calendar-alt"></i> 29/01/2025</p>
+                                </span>
+                            </div>
+                            <p class="card-text-gia text-danger" >35.990.000 VNĐ</p>
+                            <a href="../html/BuSan-HanQuoc.html" class=" card-text-link"> Xem thêm >> </a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="dang-ky-tour.html" class="btn btn-warning w-100">ĐẶT NGAY</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 3 -->
+                <div class="col">
+                    <div class="card h-70 w-150">
+                        <a href="#" class="card-link">
+                        <img src="../img/núi phú sĩ.jpg" class="card-img-top" alt="Du Lịch nb">
+                        <div class="card-body">
+                            <span class="badge bg-danger">HOT</span>
+                            <h5 class="card-title mt-2"> NÚI PHÚ SĨ - NHẬT BẢN </h5>
+                        </a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh</p>
+                                </span>
+                                <span>
+                                    <p class="card-text"><i class="fa fa-calendar-alt"></i> 20/03/2025</p>
+                                </span>
+                            </div>
+                            <p class="card-text-gia text-danger" >39.990.000 VNĐ</p>
+                            <a href="#" class=" card-text-link"> Xem thêm >> </a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="dang-ky-tour.html" class="btn btn-warning w-100">ĐẶT NGAY</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 4 -->
+                <div class="col">
+                    <div class="card h-70 w-150">
+                        <a href="#" class="card-link">
+                        <img src="../img/Hallstatt.jpg" class="card-img-top" alt="Du Lịch Hallstatt">
+                        <div class="card-body">
+                            <span class="badge bg-danger">HOT</span>
+                            <h5 class="card-title mt-2"> THỊ TRẤN HALLSTATT - ÁO </h5>
+                        </a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh</p>
+                                </span>
+                                <span>
+                                    <p class="card-text"><i class="fa fa-calendar-alt"></i> 20/03/2025</p>
+                                </span>
+                            </div>
+                            <p class="card-text-gia text-danger" >43.690.000 VNĐ</p>
+                            <a href="#" class=" card-text-link"> Xem thêm >> </a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="dang-ky-tour.html" class="btn btn-warning w-100">ĐẶT NGAY</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 5 -->
+                <div class="col">
+                    <div class="card h-70 w-150">
+                        <a href="#" class="card-link">
+                        <img src="../img/sydney.jpg" class="card-img-top" alt="Du Lịch sydney">
+                        <div class="card-body">
+                            <span class="badge bg-danger">HOT</span>
+                            <h5 class="card-title mt-2">NHÀ HÁT SEDNEY - ÚC </h5>
+                        </a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh</p>
+                                </span>
+                                <span>
+                                    <p class="card-text"><i class="fa fa-calendar-alt"></i> 20/03/2025</p>
+                                </span>
+                            </div>
+                            <p class="card-text-gia text-danger" >54.590.000 VNĐ</p>
+                            <a href="#" class=" card-text-link"> Xem thêm >> </a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="dang-ky-tour.html" class="btn btn-warning w-100">ĐẶT NGAY</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 6 -->
+                <div class="col">
+                    <div class="card h-70 w-150">
+                        <a href="#" class="card-link">
+                        <img src="../img/eiffel.jpg" class="card-img-top" alt="Du Lịch Paris">
+                        <div class="card-body">
+                            <span class="badge bg-danger">HOT</span>
+                            <h5 class="card-title mt-2">THÁP EIFEL - PHÁP  </h5>
+                        </a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh </p>
+                                </span>
+                                <span>
+                                    <p class="card-text"><i class="fa fa-calendar-alt"></i> 20/03/2025</p>
+                                </span>
+                            </div>
+                            <p class="card-text-gia text-danger" >39.550.000 VNĐ</p>
+                            <a href="#" class=" card-text-link"> Xem thêm >> </a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="dang-ky-tour.html" class="btn btn-warning w-100">ĐẶT NGAY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+    
+    <!-- Tour trong nước-->
+    <div class="row py-5 ">
+        <h2 class=" content-tour2 text-center mb-4"> TOUR TRONG NƯỚC</h2>
+        <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Tour 1 -->
+                    <div class="col">
+                        <div class="card h-70 w-150">
+                            <a href="#" class="card-link-trong">
+                            <img src="../img/vinhhalong.jpg" class="card-img-top" alt="Du Lịch Vịnh Hạ Long">
+                            <div class="card-body">
+                                <span class="badge bg-danger">HOT</span>
+                                <h5 class="card-title mt-2"> VỊNH HẠ LONG - VIỆT NAM </h5>
+                            </a>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>
+                                        <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh</p>
+                                    </span>
+                                    <span>
+                                        <p class="card-text"><i class="fa fa-calendar-alt"></i> 20/03/2025</p>
+                                    </span>
+                                </div>
+                                <p class="card-text-gia text-primary" >9.990.000 VNĐ</p>
+                                <a href="#" class="card-text-link"> Xem thêm >> </a>
+                            </div>
+                            <div class="card-footer">
+                                <a href="dang-ky-tour.html" class="btn btn-danger w-100">ĐẶT NGAY</a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Tour 2 -->
+                <div class="col">
+                    <div class="card h-70 w-150">
+                        <a href="#" class="card-link-trong">
+                        <img src="../img/hue.jpg" class="card-img-top" alt="Du Lịch hue">
+                        <div class="card-body">
+                            <span class="badge bg-danger">HOT</span>
+                            <h5 class="card-title mt-2"> ĐẠI NỘI HUẾ</h5>
+                        </a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh</p>
+                                </span>
+                                <span>
+                                    <p class="card-text"><i class="fa fa-calendar-alt"></i> 15/01/2025</p>
+                                </span>
+                            </div>
+                            <p class="card-text-gia text-primary" >9.490.000 VNĐ</p>
+                            <a href="#" class=" card-text-link"> Xem thêm >> </a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="dang-ky-tour.html" class="btn btn-danger w-100">ĐẶT NGAY</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 3 -->
+                <div class="col">
+                    <div class="card h-70 w-150">
+                        <a href="#" class="card-link-trong">
+                        <img src="../img/phuquoc.jpg" class="card-img-top" alt="Du Lịch phuquoc">
+                        <div class="card-body">
+                            <span class="badge bg-danger">HOT</span>
+                            <h5 class="card-title mt-2"> ĐẢO PHÚ QUỐC </h5>
+                        </a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh</p>
+                                </span>
+                                <span>
+                                    <p class="card-text"><i class="fa fa-calendar-alt"></i> 06/02/2025</p>
+                                </span>
+                            </div>
+                            <p class="card-text-gia text-primary" >15.990.000 VNĐ</p>
+                            <a href="#" class=" card-text-link"> Xem thêm >> </a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="dang-ky-tour.html" class="btn btn-danger w-100">ĐẶT NGAY</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 4 -->
+                <div class="col">
+                    <div class="card h-70 w-150">
+                        <a href="#" class="card-link-trong">
+                        <img src="../img/nhatrang.jpg" class="card-img-top" alt="Du Lịch nhatrang">
+                        <div class="card-body">
+                            <span class="badge bg-danger">HOT</span>
+                            <h5 class="card-title mt-2"> BÃI BIỂN NHA TRANG </h5>
+                        </a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh</p>
+                                </span>
+                                <span>
+                                    <p class="card-text"><i class="fa fa-calendar-alt"></i> 10/01/2025</p>
+                                </span>
+                            </div>
+                            <p class="card-text-gia text-primary" >7.590.000 VNĐ</p>
+                            <a href="#" class=" card-text-link"> Xem thêm >> </a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="dang-ky-tour.html" class="btn btn-danger w-100">ĐẶT NGAY</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 5 -->
+                <div class="col">
+                    <div class="card h-70 w-150">
+                        <a href="#" class="card-link-trong">
+                        <img src="../img/hoian.jpg" class="card-img-top" alt="Du Lịch hoian">
+                        <div class="card-body">
+                            <span class="badge bg-danger">HOT</span>
+                            <h5 class="card-title mt-2"> HỘI AN - NGHỆ AN </h5>
+                        </a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh</p>
+                                </span>
+                                <span>
+                                    <p class="card-text"><i class="fa fa-calendar-alt"></i> 01/01/2025</p>
+                                </span>
+                            </div>
+                            <p class="card-text-gia text-primary" >7.990.000 VNĐ</p>
+                            <a href="#" class=" card-text-link"> Xem thêm >> </a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="dang-ky-tour.html" class="btn btn-danger w-100">ĐẶT NGAY</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 6 -->
+                <div class="col">
+                    <div class="card h-70 w-150">
+                        <a href="#" class="card-link-trong">
+                        <img src="../img/hoangphuxin.jpg" class="card-img-top" alt="Du Lịch Hoang su phi">
+                        <div class="card-body">
+                            <span class="badge bg-danger">HOT</span>
+                            <h5 class="card-title mt-2 "> HOÀNG SU PHÌ - HÀ GIANG  </h5>
+                        </a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh </p>
+                                </span>
+                                <span>
+                                    <p class="card-text"><i class="fa fa-calendar-alt"></i> 03/02/2025</p>
+                                </span>
+                            </div>
+                            <p class="card-text-gia text-primary" >15.850.000 VNĐ</p>
+                            <a href="#" class=" card-text-link"> Xem thêm >> </a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="dang-ky-tour.html" class="btn btn-danger w-100">ĐẶT NGAY</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        <div class=" row py-5 col-3  mx-auto text-center">
+            <a href="../html/tour-trong-nuoc.html">
+            <button class="btn btn-primary text-center" data-toggle="collapse" data-target="#collapseExample">
+                 Xem tất cả
+              </button>
+            </a>
+            </div>
+    </div>
+    <!-- Tour nước ngoài-->
+    <div class="row py-5 ">
+        <h2 class=" content-tour3 text-center mb-4"> TOUR NƯỚC NGOÀI</h2>
+        <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Tour 1 -->
+                    <div class="col">
+                        <div class="card h-70 w-150">
+                            <a href="#" class="card-link">
+                            <img src="../img/ngami.jpg" class="card-img-top"  alt="Hàng châu">
+                            <div class="card-body">
+                                <span class="badge bg-danger">HOT</span>
+                                <h5 class="card-title mt-2">NGA MI - TRUNG QUỐC </h5>
+                            </a>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>
+                                        <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh</p>
+                                    </span>
+                                    <span>
+                                        <p class="card-text"><i class="fa fa-calendar-alt"></i> 20/03/2025</p>
+                                    </span>
+                                </div>
+                                <p class="card-text-gia text-danger" >65.990.000 VNĐ</p>
+                                <a href="#" class=" card-text-link"> Xem thêm >> </a>
+                            </div>
+                            <div class="card-footer">
+                                <a href="dang-ky-tour.html" class="btn btn-warning w-100">ĐẶT NGAY</a>
+                            </div>
+                        </div>
+                    </div>
+      
+                <!-- Tour 2 -->
+                <div class="col">
+                    <div class="card h-70 w-150">
+                        <a href="../html/BuSan-HanQuoc.html" class="card-link">
+                        <img src="../img/busan.jpg" class="card-img-top" alt="Busan">
+                        <div class="card-body">
+                            <span class="badge bg-danger">HOT</span>
+                            <h5 class="card-title mt-2"> BUSAN - HÀN QUỐC</h5>
+                        </a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh</p>
+                                </span>
+                                <span>
+                                    <p class="card-text"><i class="fa fa-calendar-alt"></i> 29/01/2025</p>
+                                </span>
+                            </div>
+                            <p class="card-text-gia text-danger" >33.990.000 VNĐ</p>
+                            <a href="../html/BuSan-HanQuoc.html" class=" card-text-link"> Xem thêm >> </a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="dang-ky-tour.html" class="btn btn-warning w-100">ĐẶT NGAY</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 3 -->
+                <div class="col">
+                    <div class="card h-70 w-150">
+                        <a href="#" class="card-link">
+                        <img src="../img/núi phú sĩ.jpg" class="card-img-top" alt="Du Lịch nb">
+                        <div class="card-body">
+                            <span class="badge bg-danger">HOT</span>
+                            <h5 class="card-title mt-2"> NÚI PHÚ SĨ - NHẬT BẢN </h5>
+                        </a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh</p>
+                                </span>
+                                <span>
+                                    <p class="card-text"><i class="fa fa-calendar-alt"></i> 20/03/2025</p>
+                                </span>
+                            </div>
+                            <p class="card-text-gia text-danger" >39.990.000 VNĐ</p>
+                            <a href="#" class=" card-text-link"> Xem thêm >> </a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="dang-ky-tour.html" class="btn btn-warning w-100">ĐẶT NGAY</a>
+                        </div>
+                    </div>
+                </div>
+      
+                <!-- Tour 4 -->
+                <div class="col">
+                    <div class="card h-70 w-150">
+                        <a href="#" class="card-link">
+                        <img src="../img/Hallstatt.jpg" class="card-img-top" alt="Du Lịch Hallstatt">
+                        <div class="card-body">
+                            <span class="badge bg-danger">HOT</span>
+                            <h5 class="card-title mt-2"> THỊ TRẤN HALLSTATT - ÁO </h5>
+                        </a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh</p>
+                                </span>
+                                <span>
+                                    <p class="card-text"><i class="fa fa-calendar-alt"></i> 20/03/2025</p>
+                                </span>
+                            </div>
+                            <p class="card-text-gia text-danger" >43.690.000 VNĐ</p>
+                            <a href="#" class=" card-text-link"> Xem thêm >> </a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="dang-ky-tour.html" class="btn btn-warning w-100">ĐẶT NGAY</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tour 5 -->
+                <div class="col">
+                    <div class="card h-70 w-150">
+                        <a href="#" class="card-link">
+                        <img src="../img/sydney.jpg" class="card-img-top" alt="Du Lịch sydney">
+                        <div class="card-body">
+                            <span class="badge bg-danger">HOT</span>
+                            <h5 class="card-title mt-2">NHÀ HÁT SEDNEY - ÚC </h5>
+                        </a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh</p>
+                                </span>
+                                <span>
+                                    <p class="card-text"><i class="fa fa-calendar-alt"></i> 20/03/2025</p>
+                                </span>
+                            </div>
+                            <p class="card-text-gia text-danger" >54.590.000 VNĐ</p>
+                            <a href="#" class=" card-text-link"> Xem thêm >> </a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="dang-ky-tour.html" class="btn btn-warning w-100">ĐẶT NGAY</a>
+                        </div>
+                    </div>
+                </div>
+      
+                <!-- Tour 6 -->
+                <div class="col">
+                    <div class="card h-70 w-150">
+                        <a href="#" class="card-link">
+                        <img src="../img/eiffel.jpg" class="card-img-top" alt="Du Lịch Paris">
+                        <div class="card-body">
+                            <span class="badge bg-danger">HOT</span>
+                            <h5 class="card-title mt-2">THÁP EIFEL - PHÁP  </h5>
+                        </a>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>
+                                    <p class="card-text"><i class="bi bi-geo-alt"></i> Hồ Chí Minh </p>
+                                </span>
+                                <span>
+                                    <p class="card-text"><i class="fa fa-calendar-alt"></i> 20/03/2025</p>
+                                </span>
+                            </div>
+                            <p class="card-text-gia text-danger" >49.550.000 VNĐ</p>
+                            <a href="#" class=" card-text-link"> Xem thêm >> </a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="dang-ky-tour.html" class="btn btn-warning w-100">ĐẶT NGAY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" row py-5 col-3  mx-auto text-center">
+                <a href="../html/tour-nuoc-ngoai.html">
+                <button class="btn btn-primary text-center" data-toggle="collapse" data-target="#collapseExample">
+                    Xem tất cả
+                  </button>
+                </a>
+            </div>    
+    </div>
+    <!-- TIN DU LỊCH-->
+    <div class="row my-5">
+        <h2 class=" content-tour4 text-center mb-4"> TIN DU LỊCH </h2>
+        <div class="row">
+            <!-- Left Main Tour Card -->
+            <div class="col-md-6 mb-4">
+                <div class="card tour-card position-relative">
+                    <a href="../html/Du-lich-hoang-su-phi-5-dia-diem-hap-dan.html" class="card-link">
+                    <img src="../img/hoangphuxin.jpg" alt="Tour Image">
+                    <div class="date-badge text-center">
+                        05 <br> Th01
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">
+                            Du lịch Hoàng Su Phì (Hà Giang): 5 địa điểm du lịch hấp dẫn nhất </h5>
+                    </a>                     
+                        <div class="underline"></div>
+                        <p class="card-text text-muted">
+                            Hoàng Su Phì, Hà Giang nơi được mệnh danh là vùng đất “vỏ cây vàng” với những đồng lúa chín trải dài bạt ngàn, hoa tam giác mạch nở rộ hay núi non trùng trùng, điệp điệp. Du lịch Hoàng Su Phì, du khách còn được tận mắt chứng kiến những đám mây bay trên đỉnh Tây Côn Lĩnh hay thưởng thức vô vàn ẩm thực của người dân đồng bào miền núi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Tour Cards -->
+            <div class="col-md-6">
+                <div class="row">
+                    <!-- Tour Card 1 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card tour-card position-relative">
+                            <img src="../img/nhatrang.jpg" alt="Tour Image">
+                            <div class="date-badge text-center">
+                                15 <br> Th02
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title font-weight-bold">
+                                    <a href="#" class="card-link">
+                                    Trốn phố thị, tìm bình yên với 6 làng chài Nha Trang phải ghé qua
+                                    </a>
+                                </h6>
+                                <div class="underline"></div>
+                                <p class="card-text text-muted">
+                                    Cuộc sống đô thị với nhịp sống hối hả, bon chen khiến chúng ta đôi khi cảm thấy mệt mỏi và chán chường.                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Tour Card 2 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card tour-card position-relative">
+                            <img src="../img/busan.jpg" alt="Tour Image">
+                            <div class="date-badge text-center">
+                                06 <br> Th11
+                            </div>
+                            <div class="card-body">
+                                <a href="#" class="card-link">
+                                <h6 class="card-title font-weight-bold">
+                                    Kinh nghiệm du lịch Busan tự túc 2024
+                                </h6>
+                                </a>
+                                <div class="underline"></div>
+                                <p class="card-text text-muted">
+                                    Busan thành phố cảng lớn nhất Hàn Quốc - điểm đến HOT các tour du lịch xứ kim chi
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Nguyên nhân chọn-->
+    <div class="row-section">
+        <h2 class="section-text text-center my-4">TẠI SAO CHỌN TRAVELING.COM</h2>
+        <p class=" text text-center"> 
+            Với thông điệp mang đam mê của chúng tôi gửi gắm đến bạn qua những chuyến đi và chất lượng luôn được đặt lên hàng đầu và mang đến cho du khách những sản phẩm hoàn hảo nhất.
+        </p>
+        <div class="row text-center py-5">
+            <div class="card card-bordered col-md-3 text-center bg-info ">
+                <span>
+                    <img src="../img/giatot.png" alt="Giá tốt" class="mb-3" width="100">
+                </span>
+                <span>
+                    <h4>GIÁ TỐT - NHIỀU ƯU ĐÃI</h4>
+                <p>Ưu đãi và quà tặng hấp dẫn khi mua tour online</p>
+                </span>
+                
+            </div>
+            <div class="card card-bordered col-md-3 text-center bg-info ">
+                <span>
+                    <img src="../img/thanhtoan.png" alt="Giá tốt" class="mb-3" width="100">
+                </span>
+                <span>                
+                    <h4>THANH TOÁN AN TOÀN</h4>
+                    <p>Được bảo mật bởi tổ chức quốc tế</p>
+                    </span>
+            </div>
+            <div class="card card-bordered col-md-3 text-center bg-info">
+                <span>
+                    <img src="../img/tuvan.png" alt="Tư vấn miễn phí" class="mb-3" width="100">
+                </span>
+                <span>
+                    <h4>TƯ VẤN MIỄN PHÍ</h4>
+                    <p>Hỗ trợ tư vấn online/offline miễn phí</p>
+                </span>
+                
+            </div>
+            <div class="card card-bordered col-md-3 text-center bg-info ">
+                <span>
+                    <img src="../img/thuonghieu.png" alt="Thương hiệu uy tín" class="mb-3" width="100">
+                </span>
+                <span>
+                    <h4>THƯƠNG HIỆU UY TÍN</h4>
+                    <p>Thương hiệu lữ hành hàng đầu Việt Nam</p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--Form đang ký-->
+    <div class="section-form py-5">
+        <div class="row bg-warning">
+            <div class="col-md-2"></div>
+        <div class="col-md-5">
+            <div class="form-dangky text-center py-5 py-5">
+                <h1>Đăng Ký Tour Ngay!</h1>
+                <div class="mt-4">
+                    <input type="email" class="form-control custom-input mx-auto" placeholder="Địa chỉ email....." style="max-width: 400px;">
+                </div>
+                <button class="btn custom-button mt-3 px-5 btn-danger">ĐĂNG KÝ</button>
+            </div>
+        </div>
+        <div class="col-md-4 py-5">
+            <img src="../img/benthuonghai.jpg" alt="" width="500">
+        </div>
+    </div>
+    </div>
+</div>
+    <!--chân footer trên-->
+    <div class="footer-top bg-dark text-white py-5 ">
+        <div class="row">
+            <div class="col-md-2"></div>
+             <!-- Dịch Vụ Column -->
+        <div class="col-md-2 text-white">
+            <div class="footer-section">DỊCH VỤ</div>
+            <a href="../html/tour-trong-nuoc.html" class="footer-link text-white">Tour Trong Nước</a>
+            <a href="../html/tour-nuoc-ngoai.html" class="footer-link text-white">Tour Nước Ngoài</a>
+        </div>
+        <!-- Hướng Dẫn Column -->
+        <div class="col-md-2">
+            <div class="footer-section">HƯỚNG DẪN</div>
+            <a href="#" class="footer-link text-white">Giới Thiệu</a>
+            <a href="#" class="footer-link text-white">Quy định chung</a>
+            <a href="#" class="footer-link text-white">Hướng dẫn thanh toán</a>
+            <a href="#" class="footer-link text-white">Hướng dẫn đặt tour</a>
+        </div>
+        <!-- Thông Tin Column -->
+        <div class="col-md-2">
+            <div class="footer-section">THÔNG TIN</div>
+            <a href="../html/Tin-tuc.html" class="footer-link text-white">Tin tức</a>
+            <a href="#" class="footer-link text-white">Dịch vụ</a>
+            <a href="#" class="footer-link text-white">Thư viện</a>
+            <a href="lien-he.html" class="footer-link text-white">Liên hệ</a>
+        </div>
+        <!-- Tin Tức Mới Nhất Column -->
+        <div class="col-md-3">
+            <div class="footer-section">TIN TỨC MỚI NHẤT</div>
+            <a href="#" class="footer-link text-white"> Kinh nghiệm du lịch Busan tự túc 2024</a>
+            <a href="#" class="footer-link text-white">Trốn phố thị, tìm bình yên với 6 làng chài Nha Trang phải ghé qua</a>
+            <a href="../html/Du-lich-hoang-su-phi-5-dia-diem-hap-dan.html" class="footer-link text-white">Du lịch Hoàng Su Phì (Hà Giang): 5 địa điểm du lịch hấp dẫn nhất</a>
+        </div>
+    </div>
+</body>
+</html>
